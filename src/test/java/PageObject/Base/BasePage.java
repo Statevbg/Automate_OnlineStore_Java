@@ -1,2 +1,12 @@
-package PageObject.Base;public class BasePage {
+package PageObject.Base;
+
+import org.openqa.selenium.WebDriver;
+
+public class BasePage {
+    protected WebDriver driver;
+
+
+    public BasePage(WebDriver driver){
+        this.driver = driver;
+    }
 }

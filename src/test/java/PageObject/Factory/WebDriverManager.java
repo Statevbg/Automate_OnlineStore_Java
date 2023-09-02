@@ -1,2 +1,46 @@
-package PageObject.Factory;public class WebDriverManager {
+package PageObject.Factory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
+
+import java.time.Duration;
+
+public class WebDriverManager {
+    public WebDriver initializeDriver(){
+        WebDriver driver;
+        String browser = "chrome";
+        if (browser.equals("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--ignore-certificate-errors");
+            // options.addArguments("--headless");
+            driver = new ChromeDriver(options);
+        } else if (browser.equals("safari")) {
+            SafariOptions options = new SafariOptions();
+            options.setAcceptInsecureCerts(true);
+            driver = new SafariDriver(options);
+        } else if (browser.equals("mozilla")) {
+            FirefoxOptions options = new FirefoxOptions();
+            // options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--ignore-certificate-errors");
+            options.addArguments("--headless");
+            driver = new FirefoxDriver(options);
+        } else {
+            EdgeOptions options = new EdgeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--ignore-certificate-errors");
+            options.addArguments("--headless");
+            driver = new EdgeDriver(options);
+        }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        return driver;
+    }
 }
