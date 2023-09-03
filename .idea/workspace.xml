@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cac62f5-4efc-4b75-b9d5-feee3ae1bbd2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0cac62f5-4efc-4b75-b9d5-feee3ae1bbd2" name="Changes" comment="second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Base/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Factory/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Factory/WebDriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Pages/HomePage.java" afterDir="false" />
@@ -37,14 +35,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="TestNG.verifySearchResults.CheckValidSearch">
+    <configuration name="verifySearchResults" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automate_OnlineStore_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.verifySearchResults" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="verifySearchResults.CheckValidSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automate_OnlineStore_Java" />
       <extension name="coverage">
@@ -66,6 +81,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.verifySearchResults.CheckValidSearch" />
+        <item itemvalue="TestNG.verifySearchResults" />
       </list>
     </recent_temporary>
   </component>
@@ -78,6 +94,14 @@
       <option name="presentableId" value="Default" />
       <updated>1693655065522</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1693663687214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693663687214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,10 +109,42 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

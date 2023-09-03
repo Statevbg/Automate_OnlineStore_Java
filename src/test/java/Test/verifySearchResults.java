@@ -16,7 +16,7 @@ public class verifySearchResults extends BaseTest {
     public static Object[][] credentials1()
     {
 
-        return new Object[][] { { "men"},{ "woman"},{ "kids"} };
+        return new Object[][] { {"Nike"},{"Shoes"}};
 
     }
 
@@ -26,5 +26,6 @@ public class verifySearchResults extends BaseTest {
         homePage = new HomePage(driver);
         homePage.searchingField(a);
         Assert.assertTrue(driver.findElement(By.cssSelector(".search-name")).getText().contains(a));
+        Assert.assertTrue(homePage.isOrdered);
     }
 }
