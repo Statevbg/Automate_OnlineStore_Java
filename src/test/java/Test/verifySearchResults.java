@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class verifySearchResults extends BaseTest {
 
     String URL ="https://demo.evershop.io/";
-    @DataProvider(name = "Authentication1")
+    @DataProvider(name = "List")
     public static Object[][] credentials1()
     {
 
@@ -20,12 +20,14 @@ public class verifySearchResults extends BaseTest {
 
     }
 
-    @Test(dataProvider = "Authentication1" )
-    public void CheckValidSearch(String a){
+    @Test(dataProvider = "List" )
+    public void verifyOrderResultsByPrice(String searchCriteria){
         driver.get(URL);
         homePage = new HomePage(driver);
-        homePage.searchingField(a);
-        Assert.assertTrue(driver.findElement(By.cssSelector(".search-name")).getText().contains(a));
+        homePage.Click(homePage.cartIcon);
+        homePage.searchingField(searchCriteria);
+        homePage.checkResultOrderByPrice();
+        Assert.assertTrue(driver.findElement(By.cssSelector(".search-name")).getText().contains(searchCriteria));
         Assert.assertTrue(homePage.isOrdered);
     }
 }

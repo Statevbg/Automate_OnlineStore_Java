@@ -16,7 +16,7 @@ import java.time.Duration;
 public class WebDriverManager {
     public WebDriver initializeDriver(){
         WebDriver driver;
-        String browser = "chrome";
+        String browser = "edge";
         if (browser.equals("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
@@ -35,9 +35,9 @@ public class WebDriverManager {
             driver = new FirefoxDriver(options);
         } else {
             EdgeOptions options = new EdgeOptions();
-            options.addArguments("--remote-allow-origins=*");
-            options.addArguments("--ignore-certificate-errors");
-            options.addArguments("--headless");
+          //  options.addArguments("--remote-allow-origins=*");
+          //  options.addArguments("--ignore-certificate-errors");
+          //  options.addArguments("--headless");
             driver = new EdgeDriver(options);
         }
         driver.manage().window().maximize();
