@@ -26,8 +26,7 @@ public class HomePage extends BasePage {
     public WebElement kidsSection = driver.findElement(By.cssSelector("li:nth-child(3) > a"));
     public WebElement cartIcon = driver.findElement(By.cssSelector(" div.mini-cart-wrapper.self-center > a"));
     public WebElement searchIcon = driver.findElement(By.cssSelector(" div.search-box "));
-    public WebElement maxPriceSlider = driver.findElement(By.cssSelector("input.max"));
-    public WebElement minPriceSlider = driver.findElement(By.cssSelector("input.min"));
+
     public boolean isOrdered = true;
     String selectCriteria = "price";
 
