@@ -19,14 +19,14 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
     public WebElement menSection = driver.findElement(By.cssSelector("li:nth-child(1) > a"));
     public WebElement womanSection = driver.findElement(By.cssSelector("li:nth-child(2) > a"));
     public WebElement kidsSection = driver.findElement(By.cssSelector("li:nth-child(3) > a"));
     public WebElement cartIcon = driver.findElement(By.cssSelector(" div.mini-cart-wrapper.self-center > a"));
     public WebElement searchIcon = driver.findElement(By.cssSelector(" div.search-box "));
-
+    public WebElement loginButton = driver.findElement(By.cssSelector(".icon-wrapper.flex.justify-between.space-x-1 > div[class='self-center'] > a > svg"));
     public boolean isOrdered = true;
     String selectCriteria = "price";
 

@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cac62f5-4efc-4b75-b9d5-feee3ae1bbd2" name="Changes" comment="third commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/Pages/HomeProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/Pages/LoginScreen.java" afterDir="false" />
+    <list default="true" id="0cac62f5-4efc-4b75-b9d5-feee3ae1bbd2" name="Changes" comment="add new page object">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/verifyLoginForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Factory/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Factory/WebDriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/verifySearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/verifySearchResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/Pages/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Pages/LoginScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,25 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.verifySearchResults.verifySliderRangePrice">
+  <component name="RunManager" selected="TestNG.verifyLoginForm.verifyLoginForm">
+    <configuration name="verifyLoginForm.verifyLoginForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automate_OnlineStore_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.verifyLoginForm" />
+      <option name="METHOD_NAME" value="verifyLoginForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="verifySearchResults" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automate_OnlineStore_Java" />
       <extension name="coverage">
@@ -117,6 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.verifyLoginForm.verifyLoginForm" />
         <item itemvalue="TestNG.verifySearchResults.verifySliderRangePrice" />
         <item itemvalue="TestNG.verifySearchResults" />
         <item itemvalue="TestNG.verifySearchResults.verifyOrderResultsByPrice" />
@@ -154,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693847278163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add new page object">
+      <created>1694609308766</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694609308766</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +223,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="add new page object" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new page object" />
   </component>
 </project>
